@@ -9,8 +9,7 @@
 import UIKit
 
 class CustomTableViewCell: UITableViewCell {
-
-   
+    // MARK: - Outlet
     @IBOutlet weak var imageOfPlace: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var lacationLabel: UILabel!
