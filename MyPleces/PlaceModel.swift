@@ -14,6 +14,7 @@ class Place: Object {
     dynamic var lacation: String?
     dynamic var type: String?
     dynamic var imageData: Data?
+    dynamic var date = Date()
     
     convenience init(name: String, lacation: String?, type: String?, imageData: Data?) {
         self.init()
