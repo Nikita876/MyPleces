@@ -137,8 +137,6 @@ extension NewPlaceViewController: UITextFieldDelegate {
             saveButton.isEnabled = false
         }
     }
-    
-    
 }
 
 // MARK: - Work with image
