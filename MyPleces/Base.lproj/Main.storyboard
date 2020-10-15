@@ -144,6 +144,28 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="140" id="qhv-Oz-KAT">
+                                        <rect key="frame" x="0.0" y="503" width="414" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qhv-Oz-KAT" id="OH5-pY-4h0">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="252" placeholderIntrinsicHeight="44" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bHy-qB-aXu" customClass="RatingControl" customModule="MyPleces" customModuleProvider="target">
+                                                    <rect key="frame" x="81" y="48" width="252" height="44"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="starCount">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bHy-qB-aXu" firstAttribute="centerX" secondItem="OH5-pY-4h0" secondAttribute="centerX" id="MCs-yP-Vq5"/>
+                                                <constraint firstItem="bHy-qB-aXu" firstAttribute="centerY" secondItem="OH5-pY-4h0" secondAttribute="centerY" id="QOF-Cg-NTe"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -175,7 +197,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S87-iq-k3H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="WqM-EX-MHT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1514" y="108"/>
+            <point key="canvasLocation" x="1512" y="98"/>
         </scene>
         <!--My Places-->
         <scene sceneID="TQJ-Xu-kvk">
@@ -252,7 +274,7 @@
                                 </connections>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Vjx-4a-3GI">
-                                <rect key="frame" x="0.0" y="88" width="414" height="39"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="32"/>
                                 <segments>
                                     <segment title="Date"/>
                                     <segment title="Name"/>
@@ -265,7 +287,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="G65-Ml-yc0" firstAttribute="trailing" secondItem="Vjx-4a-3GI" secondAttribute="trailing" id="ESn-bP-nfT"/>
-                            <constraint firstItem="dtt-T6-Dn0" firstAttribute="top" secondItem="Vjx-4a-3GI" secondAttribute="bottom" constant="1" id="MoB-81-9vS"/>
+                            <constraint firstItem="dtt-T6-Dn0" firstAttribute="top" secondItem="Vjx-4a-3GI" secondAttribute="bottom" constant="8" id="MoB-81-9vS"/>
                             <constraint firstItem="Vjx-4a-3GI" firstAttribute="leading" secondItem="G65-Ml-yc0" secondAttribute="leading" id="gG1-gd-gZe"/>
                             <constraint firstItem="Vjx-4a-3GI" firstAttribute="top" secondItem="G65-Ml-yc0" secondAttribute="top" id="vNH-Rx-pGy"/>
                         </constraints>

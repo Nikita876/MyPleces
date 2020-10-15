@@ -60,7 +60,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.nameLabel?.text = place.name
         cell.lacationLabel?.text = place.lacation
         cell.typeLabel?.text = place.type
-        cell.imageOfPlace.image = UIImage(data: place.imageData!)
+//        cell.imageOfPlace.image = UIImage(data: place.imageData!)
 
         cell.imageOfPlace?.layer.cornerRadius = cell.imageOfPlace.frame.size.height / 2
         cell.imageOfPlace?.clipsToBounds = true
@@ -69,6 +69,10 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     //  MARK: - Table view delegate
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
         if editingStyle == .delete {
