@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+ 
 class NewPlaceViewController: UITableViewController {
     // MARK: - Variables
     var currentPlace: Place!
