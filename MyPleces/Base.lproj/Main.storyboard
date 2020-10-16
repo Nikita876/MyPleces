@@ -235,14 +235,27 @@
                                     <action selector="closeVC" destination="ulL-tV-gxF" eventType="touchUpInside" id="omQ-nf-csA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aat-Xk-6e5">
+                                <rect key="frame" x="324" y="718" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FBi-z8-pmh"/>
+                                    <constraint firstAttribute="width" constant="50" id="FqF-9s-75s"/>
+                                </constraints>
+                                <state key="normal" image="Location"/>
+                                <connections>
+                                    <action selector="centerViewInUserLocation" destination="ulL-tV-gxF" eventType="touchUpInside" id="brn-cz-uEW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ccM-Dj-e4K" firstAttribute="top" secondItem="Knv-pe-27d" secondAttribute="top" constant="-51" id="AwF-Ap-N3I"/>
                             <constraint firstItem="xlS-CE-1gT" firstAttribute="top" secondItem="HaH-AO-eWL" secondAttribute="top" constant="40" id="LVt-f7-X4P"/>
                             <constraint firstItem="ccM-Dj-e4K" firstAttribute="leading" secondItem="HaH-AO-eWL" secondAttribute="leading" id="TD4-gQ-X04"/>
+                            <constraint firstItem="HaH-AO-eWL" firstAttribute="trailing" secondItem="aat-Xk-6e5" secondAttribute="trailing" constant="40" id="ZxP-0W-evg"/>
                             <constraint firstAttribute="bottom" secondItem="ccM-Dj-e4K" secondAttribute="bottom" id="dgm-RV-sm0"/>
                             <constraint firstItem="ccM-Dj-e4K" firstAttribute="trailing" secondItem="HaH-AO-eWL" secondAttribute="trailing" id="srS-kZ-Jma"/>
+                            <constraint firstItem="HaH-AO-eWL" firstAttribute="bottom" secondItem="aat-Xk-6e5" secondAttribute="bottom" constant="40" id="ulF-Qv-cqu"/>
                             <constraint firstItem="HaH-AO-eWL" firstAttribute="trailing" secondItem="xlS-CE-1gT" secondAttribute="trailing" constant="40" id="vOo-Zl-QvC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HaH-AO-eWL"/>
@@ -431,6 +444,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AZ" width="25" height="24"/>
+        <image name="Location" width="128" height="128"/>
         <image name="Photo" width="195" height="196"/>
         <image name="camcel" width="128" height="128"/>
         <image name="emptyStar" width="255" height="256"/>
