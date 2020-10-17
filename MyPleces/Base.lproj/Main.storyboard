@@ -235,7 +235,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ccM-Dj-e4K">
-                                <rect key="frame" x="0.0" y="-51" width="414" height="893"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xlS-CE-1gT">
                                 <rect key="frame" x="344" y="40" width="30" height="30"/>
@@ -285,8 +285,9 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="ccM-Dj-e4K" firstAttribute="top" secondItem="dxU-Ae-k3d" secondAttribute="bottom" constant="-177" id="0qa-9z-HTe"/>
                             <constraint firstItem="UeZ-BX-hBz" firstAttribute="centerX" secondItem="Knv-pe-27d" secondAttribute="centerX" id="77R-6H-RdX"/>
-                            <constraint firstItem="ccM-Dj-e4K" firstAttribute="top" secondItem="Knv-pe-27d" secondAttribute="top" constant="-51" id="AwF-Ap-N3I"/>
+                            <constraint firstItem="ccM-Dj-e4K" firstAttribute="top" secondItem="Knv-pe-27d" secondAttribute="top" id="BwW-r3-6KP"/>
                             <constraint firstItem="HaH-AO-eWL" firstAttribute="bottom" secondItem="h9f-1a-sj5" secondAttribute="bottom" constant="40" id="JXL-hI-wc4"/>
                             <constraint firstItem="xlS-CE-1gT" firstAttribute="top" secondItem="HaH-AO-eWL" secondAttribute="top" constant="40" id="LVt-f7-X4P"/>
                             <constraint firstItem="UeZ-BX-hBz" firstAttribute="centerY" secondItem="Knv-pe-27d" secondAttribute="centerY" constant="-20" id="MBd-vZ-QI6"/>
@@ -296,7 +297,6 @@
                             <constraint firstItem="h9f-1a-sj5" firstAttribute="centerX" secondItem="Knv-pe-27d" secondAttribute="centerX" id="Tgx-TK-bfl"/>
                             <constraint firstAttribute="bottom" secondItem="ccM-Dj-e4K" secondAttribute="bottom" id="dgm-RV-sm0"/>
                             <constraint firstItem="dxU-Ae-k3d" firstAttribute="leading" secondItem="HaH-AO-eWL" secondAttribute="leading" constant="16" id="fh3-re-DFg"/>
-                            <constraint firstItem="ccM-Dj-e4K" firstAttribute="top" secondItem="dxU-Ae-k3d" secondAttribute="bottom" constant="-228" id="nT4-By-lyf"/>
                             <constraint firstItem="ccM-Dj-e4K" firstAttribute="trailing" secondItem="HaH-AO-eWL" secondAttribute="trailing" id="srS-kZ-Jma"/>
                             <constraint firstItem="HaH-AO-eWL" firstAttribute="bottom" secondItem="aat-Xk-6e5" secondAttribute="bottom" constant="136" id="uMy-5E-1Bk"/>
                             <constraint firstItem="HaH-AO-eWL" firstAttribute="trailing" secondItem="xlS-CE-1gT" secondAttribute="trailing" constant="40" id="vOo-Zl-QvC"/>
