@@ -183,7 +183,7 @@ extension NewPlaceViewController: UIImagePickerControllerDelegate, UINavigationC
         dismiss(animated: true)
     }
 }
-
+// MARK: - MapViewControllerDelegate
 extension NewPlaceViewController: MapViewControllerDelegate {
     func getAddress(_ address: String?) {
         placeLocation.text = address

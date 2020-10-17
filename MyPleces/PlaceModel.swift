@@ -9,7 +9,7 @@
 import RealmSwift
 
 class Place: Object {
-    
+    // MARK: - Variables
     dynamic var name = ""
     dynamic var lacation: String?
     dynamic var type: String?

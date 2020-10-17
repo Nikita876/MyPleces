@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 
 class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
+    // MARK: - Variables
     private let searchController = UISearchController(searchResultsController: nil)
     private var places: Results<Place>!
     private var filteredPlaces: Results<Place>!
@@ -121,7 +121,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableView.reloadData()
     }
 }
-
+// MARK: - UISearchResultsUpdating
 extension MainViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         filterContentForSearchText(searchController.searchBar.text!)

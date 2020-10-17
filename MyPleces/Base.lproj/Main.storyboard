@@ -271,6 +271,17 @@
                                     <action selector="doneButtonPressed" destination="ulL-tV-gxF" eventType="touchUpInside" id="GnI-vL-SW3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afY-rc-XG4">
+                                <rect key="frame" x="182" y="718" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3Z6-dU-luE"/>
+                                    <constraint firstAttribute="width" constant="50" id="zcC-Yu-LpP"/>
+                                </constraints>
+                                <state key="normal" image="GetDirection"/>
+                                <connections>
+                                    <action selector="goButtonPressed" destination="ulL-tV-gxF" eventType="touchUpInside" id="GRi-r9-1rs"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aat-Xk-6e5">
                                 <rect key="frame" x="344" y="642" width="30" height="30"/>
                                 <constraints>
@@ -297,7 +308,9 @@
                             <constraint firstItem="h9f-1a-sj5" firstAttribute="centerX" secondItem="Knv-pe-27d" secondAttribute="centerX" id="Tgx-TK-bfl"/>
                             <constraint firstAttribute="bottom" secondItem="ccM-Dj-e4K" secondAttribute="bottom" id="dgm-RV-sm0"/>
                             <constraint firstItem="dxU-Ae-k3d" firstAttribute="leading" secondItem="HaH-AO-eWL" secondAttribute="leading" constant="16" id="fh3-re-DFg"/>
+                            <constraint firstItem="afY-rc-XG4" firstAttribute="centerX" secondItem="Knv-pe-27d" secondAttribute="centerX" id="py9-RL-6KZ"/>
                             <constraint firstItem="ccM-Dj-e4K" firstAttribute="trailing" secondItem="HaH-AO-eWL" secondAttribute="trailing" id="srS-kZ-Jma"/>
+                            <constraint firstItem="HaH-AO-eWL" firstAttribute="bottom" secondItem="afY-rc-XG4" secondAttribute="bottom" constant="40" id="t8b-Dl-RkS"/>
                             <constraint firstItem="HaH-AO-eWL" firstAttribute="bottom" secondItem="aat-Xk-6e5" secondAttribute="bottom" constant="136" id="uMy-5E-1Bk"/>
                             <constraint firstItem="HaH-AO-eWL" firstAttribute="trailing" secondItem="xlS-CE-1gT" secondAttribute="trailing" constant="40" id="vOo-Zl-QvC"/>
                         </constraints>
@@ -306,6 +319,7 @@
                     <connections>
                         <outlet property="addressLabel" destination="dxU-Ae-k3d" id="nY4-UB-ooJ"/>
                         <outlet property="doneButton" destination="h9f-1a-sj5" id="1sS-fz-wJh"/>
+                        <outlet property="goButton" destination="afY-rc-XG4" id="IRK-kh-wWS"/>
                         <outlet property="mapPinImage" destination="UeZ-BX-hBz" id="Hn3-VF-i6s"/>
                         <outlet property="mapView" destination="ccM-Dj-e4K" id="HWA-m9-r8x"/>
                     </connections>
@@ -491,6 +505,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AZ" width="25" height="24"/>
+        <image name="GetDirection" width="50" height="50"/>
         <image name="Location" width="128" height="128"/>
         <image name="Photo" width="195" height="196"/>
         <image name="Pin" width="42" height="42"/>
