@@ -16,7 +16,8 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     private var filteredPlaces: Results<Place>!
     private var ascendingSorting = true
     private var searchBarIsEmpty: Bool {
-        guard let text = searchController.searchBar.text else { return false}
+        guard
+            let text = searchController.searchBar.text else { return false }
         return text.isEmpty
     }
     private var isFiltering: Bool {
@@ -55,6 +56,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.lacationLabel?.text = place.lacation
         cell.typeLabel?.text = place.type
 //        cell.imageOfPlace.image = UIImage(data: place.imageData!)
+//        cell.cosmosView.rating = place.rating
 
         return cell
     }
