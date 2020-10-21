@@ -55,8 +55,8 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.nameLabel?.text = place.name
         cell.lacationLabel?.text = place.lacation
         cell.typeLabel?.text = place.type
-//        cell.imageOfPlace.image = UIImage(data: place.imageData!)
-//        cell.cosmosView.rating = place.rating
+        cell.imageOfPlace.image = UIImage(data: place.imageData!)
+        cell.cosmosView.rating = place.rating
 
         return cell
     }
