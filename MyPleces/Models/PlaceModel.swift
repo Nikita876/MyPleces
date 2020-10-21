@@ -10,12 +10,12 @@ import RealmSwift
 
 class Place: Object {
     // MARK: - Variables
-    dynamic var name = ""
-    dynamic var lacation: String?
-    dynamic var type: String?
-    dynamic var imageData: Data?
-    dynamic var date = Date()
-    dynamic var rating = 0.0
+    @objc dynamic var name = ""
+    @objc dynamic var lacation: String?
+    @objc dynamic var type: String?
+    @objc dynamic var imageData: Data?
+    @objc dynamic var date = Date()
+    @objc dynamic var rating = 0.0
     
     convenience init(name: String, lacation: String?, type: String?, imageData: Data?, rating: Double) {
         self.init()
