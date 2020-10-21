@@ -10,6 +10,7 @@
 		44AE6B612530512400B22D3B /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AE6B602530512400B22D3B /* StorageManager.swift */; };
 		44AE6B6325382BCB00B22D3B /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AE6B6225382BCB00B22D3B /* RatingControl.swift */; };
 		44B1855225387C830096CAD5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1855125387C820096CAD5 /* MapViewController.swift */; };
+		44B18554254035E40096CAD5 /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B18553254035E40096CAD5 /* MapManager.swift */; };
 		44DAB4BD252B434900D7A883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DAB4BC252B434900D7A883 /* AppDelegate.swift */; };
 		44DAB4BF252B434900D7A883 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DAB4BE252B434900D7A883 /* SceneDelegate.swift */; };
 		44DAB4C4252B434A00D7A883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44DAB4C2252B434A00D7A883 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		44AE6B602530512400B22D3B /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		44AE6B6225382BCB00B22D3B /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		44B1855125387C820096CAD5 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		44B18553254035E40096CAD5 /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
 		44DAB4B9252B434900D7A883 /* MyPleces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPleces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44DAB4BC252B434900D7A883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44DAB4BE252B434900D7A883 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44B18555254055E00096CAD5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				44DAB4D0252B472800D7A883 /* MainViewController.swift */,
+				44DAB4D6252C923200D7A883 /* NewPlaceViewController.swift */,
+				44B1855125387C820096CAD5 /* MapViewController.swift */,
+				44DAB4D2252C5D4F00D7A883 /* CustomTableViewCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		44B18556254055F10096CAD5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				44B18553254035E40096CAD5 /* MapManager.swift */,
+				44AE6B602530512400B22D3B /* StorageManager.swift */,
+				44AE6B6225382BCB00B22D3B /* RatingControl.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		44B18557254056370096CAD5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				44DAB4D4252C635300D7A883 /* PlaceModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		44B8C94E2540689300C3E2B9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				44DAB4BC252B434900D7A883 /* AppDelegate.swift */,
+				44DAB4BE252B434900D7A883 /* SceneDelegate.swift */,
+				44DAB4C5252B434C00D7A883 /* Assets.xcassets */,
+				44DAB4CA252B434C00D7A883 /* Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		44B8C94F254068E000C3E2B9 /* UBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				44DAB4C2252B434A00D7A883 /* Main.storyboard */,
+				44DAB4C7252B434C00D7A883 /* LaunchScreen.storyboard */,
+			);
+			path = UBuilder;
+			sourceTree = "<group>";
+		};
 		44DAB4B0252B434900D7A883 = {
 			isa = PBXGroup;
 			children = (
@@ -75,19 +126,11 @@
 		44DAB4BB252B434900D7A883 /* MyPleces */ = {
 			isa = PBXGroup;
 			children = (
-				44DAB4BC252B434900D7A883 /* AppDelegate.swift */,
-				44DAB4BE252B434900D7A883 /* SceneDelegate.swift */,
-				44DAB4D0252B472800D7A883 /* MainViewController.swift */,
-				44DAB4D6252C923200D7A883 /* NewPlaceViewController.swift */,
-				44B1855125387C820096CAD5 /* MapViewController.swift */,
-				44DAB4D4252C635300D7A883 /* PlaceModel.swift */,
-				44AE6B602530512400B22D3B /* StorageManager.swift */,
-				44DAB4D2252C5D4F00D7A883 /* CustomTableViewCell.swift */,
-				44AE6B6225382BCB00B22D3B /* RatingControl.swift */,
-				44DAB4C2252B434A00D7A883 /* Main.storyboard */,
-				44DAB4C5252B434C00D7A883 /* Assets.xcassets */,
-				44DAB4C7252B434C00D7A883 /* LaunchScreen.storyboard */,
-				44DAB4CA252B434C00D7A883 /* Info.plist */,
+				44B18555254055E00096CAD5 /* ViewControllers */,
+				44B18556254055F10096CAD5 /* Helpers */,
+				44B18557254056370096CAD5 /* Models */,
+				44B8C94E2540689300C3E2B9 /* Support Files */,
+				44B8C94F254068E000C3E2B9 /* UBuilder */,
 			);
 			path = MyPleces;
 			sourceTree = "<group>";
@@ -230,6 +273,7 @@
 				44AE6B612530512400B22D3B /* StorageManager.swift in Sources */,
 				44B1855225387C830096CAD5 /* MapViewController.swift in Sources */,
 				44AE6B6325382BCB00B22D3B /* RatingControl.swift in Sources */,
+				44B18554254035E40096CAD5 /* MapManager.swift in Sources */,
 				44DAB4D5252C635300D7A883 /* PlaceModel.swift in Sources */,
 				44DAB4D3252C5D4F00D7A883 /* CustomTableViewCell.swift in Sources */,
 				44DAB4BF252B434900D7A883 /* SceneDelegate.swift in Sources */,
@@ -379,7 +423,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 84N4PJWN7L;
-				INFOPLIST_FILE = MyPleces/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyPleces/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -399,7 +443,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 84N4PJWN7L;
-				INFOPLIST_FILE = MyPleces/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyPleces/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
